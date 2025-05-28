@@ -19,7 +19,7 @@ return (
         fontWeight: 'bold',
         fontSize: '24px' // Ajuste o tamanho da fonte conforme necessário
       }}>
-        Nutricionista Lata Beatriz
+        Nutricionista Lara Beatriz
       </div>
       <nav style={{
         display: 'flex',
