@@ -14,8 +14,8 @@ return (
         <div className="servicos-container">
           {/* Coluna 1: Consulta Avulsa */}
           <div className="servico-item">
-            <h2 className='texto-titulo'>Consulta Avulsa</h2>
-            <ul>
+            <h2 className='texto-titulo1'>Consulta Avulsa</h2>
+            <ul className='paragrafo'>
               <li>Análise detalhada do histórico alimentar e rotina.</li>
               <li>Definição de metas (emagrecimento, hipertrofia, definição muscular).</li>
               <li>Avaliação de composição corporal.</li>
@@ -28,8 +28,8 @@ return (
 
           {/* Coluna 2: Acompanhamento Trimestral */}
           <div className="servico-item">
-            <h2 className='texto-titulo'>Acompanhamento Trimestral</h2>
-            <ul>
+            <h2 className='texto-titulo1'>Acompanhamento Trimestral</h2>
+            <ul className='paragrafo'>
               <li>Avaliação detalhada: histórico, rotina, objetivos, solicitação e avaliação de exames.</li>
               <li>Definição de metas, com estratégias personalizada.</li>
               <li>Acompanhamento por 90 dias (consecutivos).</li>
@@ -42,15 +42,16 @@ return (
             </ul>
           </div>
         </div>
-
-        <a
-          href="https://wa.me/message/ECMBGJDA4QTDC1"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="agendar-whatsapp"
-        >
-          Quero Agendar
-        </a>
+        <div className='botao-agendar-container'>
+            <a
+              href="https://wa.me/message/ECMBGJDA4QTDC1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="agendar-whatsapp"
+            >
+              Quero Agendar
+            </a>
+        </div>    
       </div>
     </div>
   </div>

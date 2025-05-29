@@ -35,6 +35,13 @@ color: #555;
 margin-bottom: 20px;
 }
 
+.texto-titulo1 {
+font-size: 2.0em;
+font-weight: bold;
+color: #555;
+margin-bottom: 20px;
+}
+
 .img-quem-sou-eu {
 width: 100%;
 height: auto;
@@ -48,13 +55,14 @@ display: flex;
 align-items: center;
 justify-content: center;
 padding: 60px;
+flex-direction: column;
 /* background-color: #f8f8f8;  Removi a cor de fundo daqui */
 }
 
 .conteudo-principal {
 max-width: 800px;
 display: flex;
-flex-direction: row;
+flex-direction: column;
 align-items: center;
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 border-radius: 10px;
@@ -66,6 +74,7 @@ background-color: #f8f8f8;
 flex: 1;
 padding: 30px;
 text-align: justify;
+align-items: ;
 }
 
 .paragrafo {
@@ -128,8 +137,15 @@ align-items: center;
 
 }
 
+.botao-agendar-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+
 .agendar-whatsapp {
-display: inline-block;
+
 padding: 10px 20px;
 background-color: #25D366; /* Cor do WhatsApp */
 color: white;
@@ -138,6 +154,10 @@ border-radius: 5px;
 margin-top: 20px;
 font-weight: bold;
 align-items: center;
+display: inline-flex;
+justify-content: center;
+
+
 }
 
 /* Media Query para dispositivos móveis (Serviços) */
@@ -145,4 +165,24 @@ align-items: center;
 .servicos-container {
   grid-template-columns: 1fr; /* Uma coluna no mobile */
 }
+}
+
+.menu-desktop {
+  display: flex;
+  gap: 40px;
+}
+
+.menu-mobile {
+  display: none; /* escondido por padrão */
+}
+
+/* Exibe só no mobile */
+@media (max-width: 768px) {
+  .menu-desktop {
+    display: none; /* Esconde menu tradicional */
+  }
+
+  .menu-mobile {
+    display: block; /* Mostra ícone no mobile */
+  }
 }
