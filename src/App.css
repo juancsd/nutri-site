@@ -29,14 +29,15 @@ color: #61dafb;
 }
 
 .texto-titulo {
-font-size: 2.5em;
+font-size: 2.2em;
 font-weight: bold;
 color: #555;
 margin-bottom: 20px;
+text-align: left;
 }
 
 .texto-titulo1 {
-font-size: 2.0em;
+font-size: 1.6em;
 font-weight: bold;
 color: #555;
 margin-bottom: 20px;
@@ -48,7 +49,7 @@ height: auto;
 display: block;
 }
 
-/* Estilos para o componente QuemSouEu */
+
 
 .bloco-central {
 display: flex;
@@ -56,29 +57,27 @@ align-items: center;
 justify-content: center;
 padding: 60px;
 flex-direction: column;
-/* background-color: #f8f8f8;  Removi a cor de fundo daqui */
+
 }
 
 .conteudo-principal {
 max-width: 800px;
 display: flex;
-flex-direction: column;
 align-items: center;
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 border-radius: 10px;
 overflow: hidden;
-background-color: #f8f8f8;
+background-color: #e5dede;
 }
 
 .texto-container {
 flex: 1;
 padding: 30px;
 text-align: justify;
-align-items: ;
 }
 
 .paragrafo {
-font-size: 1.1em;
+font-size: 1.0em;
 line-height: 1.6;
 color: #666;
 margin-bottom: 15px;
@@ -87,40 +86,42 @@ margin-bottom: 15px;
 .imagem-container {
 flex: 1;
 overflow: hidden;
-display: flex; /* Adiciona flexbox ao container da imagem */
-justify-content: center; /* Centraliza horizontalmente */
+display: flex;
+justify-content: center; 
 align-items: center;
 border-radius: 10px;
-margin-right: 20px; /* Centraliza verticalmente */
+margin: 20px; 
 }
 
 .imagem-container img {
-max-width: 100%; /* Garante que a imagem não seja maior que o container */
-max-height: 100%; /* Garante que a imagem não seja maior que o container */
-object-fit: contain; /* Mantém a proporção e cabe dentro do container */
+max-width: 100%; 
+max-height: 100%; 
+object-fit: contain; 
 }
 
-/* Media Query para dispositivos móveis */
 @media (max-width: 768px) {
 .conteudo-principal {
-  flex-direction: column; /* Alinha os itens em coluna no mobile */
+  flex-direction: column; 
 }
 
 .texto-container {
   order: 1;
-   /* Garante que o texto apareça primeiro */
+   
 }
 
 .imagem-container {
-  order: 2; /* Garante que a imagem apareça depois do texto */
+  order: 2; 
+  align-items: center;
+  justify-items: center;
 }
 
 .bloco-central {
-  padding: 20px; /* Reduz o padding no mobile */
+  padding: 20px;
 }
 }
 
-/* Estilos específicos para a página de serviços */
+
+
 
 .servicos-container {
 display: grid;
@@ -147,7 +148,7 @@ align-items: center;
 .agendar-whatsapp {
 
 padding: 10px 20px;
-background-color: #25D366; /* Cor do WhatsApp */
+background-color: #25D366;
 color: white;
 text-decoration: none;
 border-radius: 5px;
@@ -160,10 +161,10 @@ justify-content: center;
 
 }
 
-/* Media Query para dispositivos móveis (Serviços) */
+
 @media (max-width: 768px) {
 .servicos-container {
-  grid-template-columns: 1fr; /* Uma coluna no mobile */
+  grid-template-columns: 1fr; 
 }
 }
 
@@ -173,16 +174,26 @@ justify-content: center;
 }
 
 .menu-mobile {
-  display: none; /* escondido por padrão */
+  display: none;
+  
+
 }
 
 /* Exibe só no mobile */
 @media (max-width: 768px) {
   .menu-desktop {
-    display: none; /* Esconde menu tradicional */
+    display: none;
   }
 
   .menu-mobile {
-    display: block; /* Mostra ícone no mobile */
+    display: block;
+    
   }
+}
+
+.header {
+  background: #e5dede;
+  padding: 20px 0;
+  margin-bottom: 40px;
+  box-shadow: '0 2px 8px rgba(0,0,0,0.05)'
 }
