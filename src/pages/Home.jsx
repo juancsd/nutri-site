@@ -19,7 +19,7 @@ return (
         
         maxWidth: '40%',
         margin: '4px',
-        top: '30%',
+        top: '40%',
         left: '20%',
         transform: 'translate(-50%, -50%)',
         color: '#383A37',
