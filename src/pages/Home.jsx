@@ -1,6 +1,7 @@
 import React from 'react';
 import imagemlogo from "../images/logo.jpg";
 import imagemtexto from "../images/imgcomtexto.jpg";
+import imagemfinal from "../images/imgfinal.jpg";
 import '../App.css';
 
 function Home() {
@@ -51,6 +52,16 @@ e dar um UP na sua autoestima, e ter mais qualidade de vida?</p>
 própria, sem sucesso, a finalmente alcançarem o corpo que tanto desejavam, de forma leve e
 prazerosa.</p>
         <p className="paragrafo">Quer saber como? Toque no botão abaixo, e entre em contato comigo, pelo WhatsApp!</p>
+        <div className='botao-agendar-container'>
+            <a
+              href="https://wa.me/message/ECMBGJDA4QTDC1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="agendar-whatsapp"
+            >
+              Enviar Whatsapp
+            </a>
+        </div>
     </div>
     
    </div>
@@ -87,7 +98,43 @@ flexível, sem culpa e sem frustrações.</p>
     
     </div>
    </div>
-   <div className="conteudo-principal"></div>
+    <div className="conteudo-principal">
+      {/* Text Content */}
+      <div className="texto-container">
+        <h1 className='texto-titulo'>Prazer, Lara Beatriz, sua nutri!</h1>
+        <p className="paragrafo">
+          Sou Lara Beatriz, nutricionista especialista em emagrecimento e hipertrofia. Me dedico a transformar
+vidas através da nutrição, e do exercício físico.
+        </p>
+        <p className="paragrafo">
+          Ajudo mulheres a alcançarem o corpo dos sonhos, de maneira saudável e sustentável. Mostrando que é
+possível mudar os hábitos alimentares, não somente por um curto período de tempo, mas à longo prazo.
+        </p>
+        <p className="paragrafo">
+          Minha formação inclui pós graduação em Nutrição Esportiva e Estética, pelo Instituto Plenitude
+Educação.</p>
+        <p className="paragrafo">
+          Busco sempre entender as dores, necessidades e desejos das minhas pacientes, para que possamos
+traçar as melhores estratégias, a fim de alcançar a sua melhor versão.</p>
+        <p className="paragrafo">
+          Acredito em emagrecimento com saúde, autoestima e bem-estar, sem pressões, dietas malucas e
+radicalismo. Por isso, quero te mostrar, que o emagrecimento é possível, através do meu
+acompanhamento humanizado, focado não apenas na dieta e no treino, mas também no poder feminino,
+na autoestima, na superação da auto sabotagem e na mudança de estilo de vida.</p>
+        <p className="paragrafo">
+          Juntas, vamos transformar sua mentalidade, e alcançar o corpo dos seus sonhos, de forma leve,
+prazerosa, sem efeito sanfona, e sem ter que abrir mão do que você tanto ama.</p>
+      </div>
+
+      {/* Image */}
+      <div className="imagem-container">
+        <img
+          src={imagemfinal}
+          alt="Lara Beatriz"
+          className='img-quem-sou-eu'
+        />
+      </div>
+    </div>
 </div>
 );
 }

@@ -78,6 +78,17 @@ height: auto;
 display: block;
 }
 
+.div-contato {
+display: flex;
+flex-direction: column;
+
+}
+
+.contato-item {
+margin: 10px;
+
+}
+
 
 
 .bloco-central {
@@ -90,7 +101,7 @@ flex-direction: column;
 }
 
 .conteudo-principal {
-max-width: 800px;
+max-width: 1200px;
 display: flex;
 align-items: center;
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
@@ -204,7 +215,7 @@ background-color: white;
 .agendar-whatsapp {
 
 padding: 10px 20px;
-background-color: #25D366;
+background-color: #383A37;
 color: white;
 text-decoration: none;
 border-radius: 5px;

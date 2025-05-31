@@ -10,6 +10,10 @@ function Header() {
     setMenuAberto(!menuAberto);
   };
 
+  const fecharMenu = () => {
+    setMenuAberto(false);
+  };
+
   return (
     <header className='header'>
       <div className='div-header' style={{
@@ -43,10 +47,10 @@ function Header() {
             zIndex: menuAberto ? 1000 : undefined,
           }}
         >
-          <Link to="/" style={{ color: '#666', fontWeight: 'bold', textDecoration: 'none', fontSize: '20px' }}>Início</Link>
-          <Link to="/servicos" style={{ color: '#666', fontWeight: 'bold', textDecoration: 'none', fontSize: '20px' }}>Serviços</Link>
-          <Link to="/quem-sou-eu" style={{ color: '#666', fontWeight: 'bold', textDecoration: 'none', fontSize: '20px' }}>Quem Sou Eu?</Link>
-          <Link to="/contato" style={{ color: '#666', fontWeight: 'bold', textDecoration: 'none', fontSize: '20px' }}>Contato</Link>
+          <Link to="/" style={{ color: '#666', fontWeight: 'bold', textDecoration: 'none', fontSize: '20px' }} onClick={fecharMenu}>Início</Link>
+          <Link to="/servicos" style={{ color: '#666', fontWeight: 'bold', textDecoration: 'none', fontSize: '20px' }}onClick={fecharMenu}>Serviços</Link>
+          <Link to="/quem-sou-eu" style={{ color: '#666', fontWeight: 'bold', textDecoration: 'none', fontSize: '20px' }}onClick={fecharMenu}>Quem Sou Eu?</Link>
+          <Link to="/contato" style={{ color: '#666', fontWeight: 'bold', textDecoration: 'none', fontSize: '20px' }}onClick={fecharMenu}>Contato</Link>
         </nav>
 
         {/* Ícone de menu para mobile */}
