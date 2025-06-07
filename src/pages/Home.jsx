@@ -59,7 +59,7 @@ prazerosa.</p>
               rel="noopener noreferrer"
               className="agendar-whatsapp"
             >
-              Enviar Whatsapp
+              Enviar mensagem no Whatsapp
             </a>
         </div>
     </div>
